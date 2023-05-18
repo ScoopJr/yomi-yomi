@@ -79,11 +79,13 @@ nav ul li a {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .main-links ul li {
     margin: 0 10px;
+    flex-basis: 200px;
 }
 
 .main-links ul li a {
@@ -91,6 +93,8 @@ nav ul li a {
     color: #fff;
     font-weight: bold;
     font-size: 16px;
+    display: block;
+    margin-top: 10px;
 }
 
 /* Footer styles */
@@ -137,8 +141,9 @@ footer {
         font-size: 14px;
     }
 
-    .main-links ul li a {
-        font-size: 14px;
+    .main-links ul li {
+        margin: 10px 10px;
+        flex-basis: 100%;
     }
 
     .social-logo {
