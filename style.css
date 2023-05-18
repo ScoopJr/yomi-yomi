@@ -7,12 +7,30 @@ body {
 
 /* Header styles */
 header {
-    background-color: #f9c942;
+    background-color: #f19935;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
-    height: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.app-name {
+    color: #fff;
+    font-size: 48px;
+    margin-left: 10px;
+    font-family: "Your Fun Font", cursive;
 }
 
 nav ul {
@@ -20,7 +38,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
 }
 
 nav ul li {
@@ -32,6 +50,13 @@ nav ul li a {
     color: #fff;
     font-weight: bold;
 }
+
+.nav-links {
+    margin-left: auto;
+}
+
+
+
 
 /* Hero styles */
 .hero {
@@ -69,7 +94,7 @@ nav ul li a {
 
 /* Main links styles */
 .main-links {
-    background-color: #f9c942;
+    background-color: #f19935;
     padding: 40px 20px;
     text-align: center;
 }
