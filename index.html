@@ -16,13 +16,13 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">
+                    <img src="images/youtube-banner.svg" alt="YouTube" class="youtube-banner-logo"></a></li>
             </ul>
         </nav>
     </header>
     
+<div class="container">
 
     <section class="hero">
         <h1>YomiYomi: Japanese Short Stories for Any Level</h1>
@@ -34,8 +34,9 @@
         <p>Introduce the key features and benefits of your app, highlighting what sets it apart from others.</p>
         <p>Welcome to YomiYomi, a reading app designed for beginners like you who are eager to start reading Japanese! As a beginner developer and Japanese learner myself, I understand the challenges of getting started with reading practice. That's why I created this app to provide a structured and engaging way for you to embark on your Japanese reading journey.
         <p>YomiYomi focuses on short stories tailored to your WaniKani level. By utilizing the vocabulary you've learned through WaniKani, each YomiYomi level offers a collection of stories carefully crafted to cover all the corresponding vocabulary. This ensures that you can practice and reinforce your knowledge effectively.
-        <p>Here's what you can expect from each YomiYomi level:
-            <ul>
+
+            <ul class="list-container">
+                <p>Here's what you can expect from each YomiYomi level:
                 <li>Title in English and Japanese: Each story will be presented with its title written in both English and Japanese, allowing you to easily identify the content.</li>
                 <li>Vocabulary List: To support your learning, a comprehensive vocabulary list will be provided for each story. You'll find the Japanese words along with their English translations. The list will be conveniently hidden within a dropdown, allowing you to reveal it when needed.</li>
                 <li>Plot Summary: To give you a glimpse into the story, a plot summary will be provided in English. This summary will be hidden within a dropdown, ensuring that you can choose to read it or challenge yourself to dive into the story directly.</li>
@@ -47,45 +48,45 @@
         <p>Embark on your reading adventure with YomiYomi and discover the joy of exploring Japanese literature!</p>
     </section>
 
-    <section class="main-links">
-        <ul>
-            <li><a href="#page1">Levels 1 to 10</a></li>
-            <li><a href="#page2">Levels 11 to 20</a></li>
-            <li><a href="#page3">Levels 21 to 30</a></li>
-            <li><a href="#page4">Levels 31 to 40</a></li>
-            <li><a href="#page5">Levels 41 to 50</a></li>
-            <li><a href="#page6">Levels 51 to 60</a></li>
-        </ul>
+    <section class="button-container">
+        <button><a href="#page1">Levels 1 to 10</a></button>
+        <button><a href="#page2">Levels 11 to 20</a></button>
+        <button><a href="#page3">Levels 21 to 30</a></button>
+        <button><a href="#page4">Levels 31 to 40</a></button>        
+        <button><a href="#page5">Levels 41 to 50</a></button>
+        <button><a href="#page6">Levels 51 to 60</a></button>
     </section>
+
+</div>
 
     <section class="main-links">
         <h2>Sample Stories</h2>
         <ul>
             <li>
                 <div class="story">
-                    <img src="image1.jpg" alt="Story 1">
-                    <h3>Story Title 1</h3>
+                    <img src="images/soon.png" alt="Story 1">
+                    <h3>Story Coming Soon</h3>
                     <p>Level: 5</p>
                 </div>
             </li>
             <li>
                 <div class="story">
-                    <img src="image2.jpg" alt="Story 2">
-                    <h3>Story Title 2</h3>
+                    <img src="images/soon.png" alt="Story 2">
+                    <h3>Story Coming Soon</h3>
                     <p>Level: 15</p>
                 </div>
             </li>
             <li>
                 <div class="story">
-                    <img src="image3.jpg" alt="Story 3">
-                    <h3>Story Title 3</h3>
+                    <img src="images/soon.png" alt="Story 3">
+                    <h3>Story Coming Soon</h3>
                     <p>Level: 25</p>
                 </div>
             </li>
             <li>
                 <div class="story">
-                    <img src="image4.jpg" alt="Story 4">
-                    <h3>Story Title 4</h3>
+                    <img src="images/soon.png" alt="Story 4">
+                    <h3>Story Coming Soon</h3>
                     <p>Level: 35</p>
                 </div>
             </li>
@@ -93,13 +94,30 @@
     </section>    
 
     <footer>
-        <p>&copy; 2023 Your App. All rights reserved. | Privacy Policy | Terms of Service</p>
+        <p>&copy; 2023 YomiYomi. All rights reserved.
+            <a href="privacy.html"><span style="color: gray;"><strong>Privacy Policy</strong></span></a>
+            |
+            <a href="terms.html"><span style="color: gray;"><strong>Terms & Conditions</strong></span></a>
+        </p>
         <div class="social-media">
-            <a href="https://www.youtube.com/your-channel" target="_blank">
-                <img src="youtube_logo.png" alt="YouTube" class="social-logo">
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="images/youtube.png" alt="YouTube" class="youtube-logo">
             </a>
-        </div>
-    </footer>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter" class="twitter-logo">
+            </a>
+        </div>        
+    </footer>    
+
+    <script src="script.js"></script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 </body>
 </html>
