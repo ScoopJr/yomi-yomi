@@ -6,6 +6,47 @@ body {
 }
 
 /* Header styles */
+@media (max-width: 768px) {
+    header {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .logo {
+      justify-content: center;
+    }
+  
+    .logo img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    header {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .logo {
+      justify-content: center;
+    }
+  
+    .logo img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-links ul li img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  
+
 header {
     background-color: #f19935;
     padding: 20px;
@@ -158,7 +199,7 @@ nav ul li a {
     border-radius: 60px;
 }
 
-/* Buttons style - replaces links*/
+/* Buttons style*/
 .button-container {
     display: flex;
     justify-content: center;
