@@ -39,6 +39,22 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   
+    // Dropdown Menu
+    var dropdownBtn = document.querySelector(".menu-icon"); 
+    var dropdownMenu = document.querySelector(".dropdown-menu");
+    
+  
+    dropdownBtn.addEventListener("click", function() {
+      dropdownMenu.classList.toggle("active");
+    });
+  
+    // Close dropdown when clicking outside the dropdown menu
+    document.addEventListener("click", function(event) {
+      var target = event.target;
+      if (!target.closest(".dropdown")) {
+        dropdownMenu.classList.remove("active");
+      }
+    });
   });
   
   function scrollToTop() {
@@ -48,3 +64,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
+  function toggleDropdown() {
+    var dropdownMenu = document.getElementById("dropdown-menu");
+    dropdownMenu.classList.toggle("show");
+  }
+  
+  // YouTube Subscribe Button
+function handleYtEvent(ytEvent) {
+    if (ytEvent.data === YT.PlayerState.SUBSCRIBE) {
+      // User subscribed
+      console.log('User subscribed');
+    }
+  }
