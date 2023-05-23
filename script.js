@@ -71,4 +71,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var dropdownMenu = document.getElementById("dropdown-menu");
     dropdownMenu.classList.toggle("show");
   }
+
+  function toggleContent(element) {
+    const bar = element.parentNode;
+    bar.classList.toggle('open');
+  }
+  
   

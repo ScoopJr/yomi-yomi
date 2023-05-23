@@ -438,6 +438,30 @@ ruby {
   ruby:hover rt {
     visibility: visible;
   }
+
+  /* all levels content */
+  .bar {
+    margin-bottom: 1rem;
+    margin-top: 2rem; 
+    width: 100%;
+  }
+  
+  .bar-header {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  .bar-content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 1rem;
+  }
+  
+  .bar.open .bar-content {
+    display: block;
+  }
+  
   
       
 
