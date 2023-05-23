@@ -3,12 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('nav a');
     links.forEach(link => {
       link.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
+        const targetId = link.getAttribute('href').substring(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       });
     });
   
@@ -69,10 +72,3 @@ document.addEventListener('DOMContentLoaded', function() {
     dropdownMenu.classList.toggle("show");
   }
   
-  // YouTube Subscribe Button
-function handleYtEvent(ytEvent) {
-    if (ytEvent.data === YT.PlayerState.SUBSCRIBE) {
-      // User subscribed
-      console.log('User subscribed');
-    }
-  }
