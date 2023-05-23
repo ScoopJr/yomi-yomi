@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function toggleContent(element) {
-    const bar = element.parentNode;
-    bar.classList.toggle('open');
-  }
-  
+  const bar = element.parentNode;
+  bar.classList.toggle('open');
+}
+
   

@@ -442,32 +442,49 @@ ruby {
   /* all levels content */
   .bar {
     margin-bottom: 1rem;
-    margin-top: 2rem; 
+    margin-top: 2rem;
     width: 100%;
   }
   
   .bar-header {
-    background-color: #f1f1f1;
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
     padding: 1rem;
     cursor: pointer;
+    height: 2rem; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the text horizontally */
+    position: relative; /* Add position relative for pseudo-element */
+  }
+  
+  .bar-header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 8px solid transparent; /* Adjust the size of the triangle */
+    border-right: 8px solid transparent; /* Adjust the size of the triangle */
+    border-top: 8px solid black; /* Adjust the size and color of the triangle */
+    margin-left: 20px;
   }
   
   .bar-content {
-    display: none;
-    background-color: #f9f9f9;
+    display: none; /* Hide the dropdown content by default */
     padding: 1rem;
+  }
+  
+  /* Style the text inside the dropdown content */
+  .bar-content p {
+    color: black;
   }
   
   .bar.open .bar-content {
     display: block;
   }
   
-  
-      
-
-
-
-
 
 
 
