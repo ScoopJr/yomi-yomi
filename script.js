@@ -86,12 +86,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
+
+
+
 function generateLevels() {
     var levelsData = [
       // Level 1
       [
-        { image: 'placeholder1.jpg', alt: 'Story 1', title: 'Story 1', link: 'story1.html' },
-        { image: 'placeholder2.jpg', alt: 'Story 2', title: 'Story 2', link: 'story2.html' },
+        { image: 'images/soon.png', alt: 'Story 1', title: 'Story 1', link: 'story1.html' },
+        { image: 'images/soon.png', alt: 'Story 2', title: 'Story 2', link: 'story2.html' },
         // Add more stories for Level 1 if needed
       ],
       // Level 2
@@ -125,7 +132,17 @@ function generateLevels() {
         storyTitle.appendChild(storyLink);
         storyContent.appendChild(storyImage);
         storyContent.appendChild(storyTitle);
-       
+  
+        storyItem.appendChild(storyContent);
+        levelList.appendChild(storyItem);
+      }
+    }
+  }
+  
+  // Call the generateLevels function
+  generateLevels();
+  
+
   
 
 
