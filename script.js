@@ -79,3 +79,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
+
+
+
+function generateLevels() {
+    var levelsData = [
+      // Level 1
+      [
+        { image: 'placeholder1.jpg', alt: 'Story 1', title: 'Story 1', link: 'story1.html' },
+        { image: 'placeholder2.jpg', alt: 'Story 2', title: 'Story 2', link: 'story2.html' },
+        // Add more stories for Level 1 if needed
+      ],
+      // Level 2
+      [
+        { image: 'placeholder3.jpg', alt: 'Story 3', title: 'Story 3', link: 'story3.html' },
+        // Add more stories for Level 2 if needed
+      ],
+      // Add more levels if needed
+    ];
+  
+    var levelLists = document.getElementsByClassName('level-list');
+    for (var i = 0; i < levelLists.length; i++) {
+      var levelList = levelLists[i];
+      var levelStories = levelsData[i];
+  
+      for (var j = 0; j < levelStories.length; j++) {
+        var story = levelStories[j];
+  
+        var storyItem = document.createElement('li');
+        var storyContent = document.createElement('div');
+        var storyImage = document.createElement('img');
+        var storyLink = document.createElement('a');
+        var storyTitle = document.createElement('p');
+  
+        storyImage.src = 'images/' + story.image;
+        storyImage.alt = story.alt;
+  
+        storyLink.href = story.link;
+        storyLink.textContent = story.title;
+  
+        storyTitle.appendChild(storyLink);
+        storyContent.appendChild(storyImage);
+        storyContent.appendChild(storyTitle);
+       
+  
+
+

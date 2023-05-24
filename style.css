@@ -228,7 +228,19 @@ body {
   .story img {
     width: 100%;
     height: auto;
-    border-radius: 60px;
+    border-radius: 100px;
+  }
+
+  .story-level img {
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+  }
+
+  .croc img {
+    width: 20%;
+    height: auto;
+    border-radius: 100px;
   }
   
   /* Level input style */
@@ -476,8 +488,8 @@ ruby {
     padding: 1rem;
   }
   
-  /* Style the text inside the dropdown content */
-  .bar-content p {
+ /* Style the text inside the dropdown content */
+.bar-content p {
     color: black;
   }
   
@@ -485,6 +497,62 @@ ruby {
     display: block;
   }
   
-
-
-
+  /* Bar content styles */
+  .bar-content {
+    background-color: whitesmoke;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .bar-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .bar-content li {
+    flex: 0 0 33.33%; /* Adjust this value to control the width of each item */
+    text-align: center;
+  }
+  
+  .bar-content ul li {
+    margin: 0;
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .bar-content ul li img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+  }
+  
+  .bar-content ul li p {
+    margin-top: 10px;
+  }
+  
+  .bar-content ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .level-header {
+    display: inline-block;
+    background-color: whitesmoke;
+    /*color: black;*/
+    padding: 5px 20px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  
