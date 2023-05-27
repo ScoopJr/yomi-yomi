@@ -557,7 +557,7 @@ ruby {
   }
 
   .story-image {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin-bottom: 20px;
   }
