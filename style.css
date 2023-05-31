@@ -546,14 +546,25 @@ ruby {
     margin-top: 5px;
   }
   
+
   .level-header {
     display: inline-block;
     background-color: whitesmoke;
-    /*color: black;*/
-    padding: 5px 400px;
+    padding: 5px 20px;
     text-decoration: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+@media screen and (min-width: 768px) {
+    /* Styles for screens larger than or equal to 768px (desktop) */
+    .level-header {
+      padding: 5px 400px; 
+    }
   }
 
   .story-image {
