@@ -615,15 +615,26 @@ ruby {
   }
   
   .bar-header-level::before {
-    content: "\25BC"; /* Unicode character for downwards triangle */
+    content: "\25BE"; /* Unicode character for downwards triangle */
     display: inline-block;
     margin-right: 5px;
-    transition: transform 0.3s ease;
+    font-size: 24px; /* Increase the size of the triangle */
+    transition: transform 0.3s ease, color 0.3s ease; /* Added color transition */
+    color: grey; /* Set the initial color to grey */
   }
   
   .bar-header-level.opened::before {
     transform: rotate(180deg);
+    color: black; /* Change the color to black when facing up */
   }
+  
+  .bar-header-level h3 {
+    color: grey; /* Set the color to grey */
+    margin-left: 10px; /* Add left margin for space */
+  }
+  
+  
+  
   
   
   
