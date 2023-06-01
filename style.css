@@ -597,9 +597,36 @@ ruby {
     background-color: #e9e9e9;
   }
   
+  /* Hidden dropdown for summary and vocab on level pages */
   .hidden {
     display: none;
   }
+  
+  .bar-level {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bar-header-level {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .bar-header-level::before {
+    content: "\25BC"; /* Unicode character for downwards triangle */
+    display: inline-block;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .bar-header-level.opened::before {
+    transform: rotate(180deg);
+  }
+  
+  
+  
   
   
 
