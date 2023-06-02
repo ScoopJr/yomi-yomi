@@ -71,14 +71,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var dropdownMenu = document.getElementById("dropdown-menu");
     dropdownMenu.classList.toggle("show");
   }
-
-  function toggleContent(element) {
-  const bar = element.parentNode;
-  bar.classList.toggle('open');
-}
-
-// Hidden dropdown and inverted triangle for level pages
-function toggleContent(element) {
+  
+  function toggleContentAllLevels(element) {
+    const bar = element.parentNode;
+    bar.classList.toggle('open');
+  }
+  
+  function toggleContentLevel(element) {
     var content = element.nextElementSibling;
     content.classList.toggle("hidden");
     element.classList.toggle("opened");
@@ -86,6 +85,7 @@ function toggleContent(element) {
   
   
 
+  
 
 
 
@@ -100,6 +100,7 @@ function toggleContent(element) {
 
 
 
+/*
 // Level data with story information
 var levelsData = [
     // Levels 1 to 10
@@ -168,6 +169,6 @@ var levelsData = [
   for (var i = 0; i < levelsData.length; i++) {
     generateLevelStories(i + 1, levelsData[i]);
   }
-
+*/
 
   

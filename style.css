@@ -135,11 +135,12 @@ body {
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1); /* Modified box-shadow property */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 20px; 
   }
 
   .list-container {
@@ -645,8 +646,12 @@ ruby {
   
   
   
-  
-  
 
+
+
+
+
+  
+  
 
 
