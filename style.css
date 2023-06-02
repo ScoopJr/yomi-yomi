@@ -633,7 +633,14 @@ ruby {
     margin-left: 10px; /* Add left margin for space */
   }
   
+  .youtube-story {
+    display: flex;
+    align-items: center;
+  }
   
+  .youtube-logo {
+    margin-left: 5px; /* Adjust the margin as needed */
+  }
   
   
   
