@@ -644,6 +644,74 @@ ruby {
   }
   
   
+  .content {
+    /* Add any other necessary styles for the section */
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+
+  
+  /* JLPT table screen size*/
+  .jlpt-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .jlpt-table th,
+  .jlpt-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .jlpt-table {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .jlpt-table thead {
+      display: none;
+    }
+  
+    .jlpt-table tbody tr {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+  
+    .jlpt-table td::before {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+  
+    .jlpt-table td:nth-child(1)::before {
+      content: 'YomiYomi Story Level (WaniKani Level)';
+    }
+  
+    .jlpt-table td:nth-child(2)::before {
+      content: 'N5';
+    }
+  
+    .jlpt-table td:nth-child(3)::before {
+      content: 'N4';
+    }
+  
+    .jlpt-table td:nth-child(4)::before {
+      content: 'N3';
+    }
+  
+    .jlpt-table td:nth-child(5)::before {
+      content: 'N2';
+    }
+  
+    .jlpt-table td:nth-child(6)::before {
+      content: 'N1';
+    }
+  }
+  
   
   
 
