@@ -227,15 +227,16 @@ body {
   }
   
   .story img {
-    width: 100%;
-    height: auto;
-    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
   }
 
   .story-level img {
     width: 100%;
     height: auto;
-    border-radius: 100px;
+    border-radius: 100px; /*should this be 50%?*/
   }
 
   .croc img {
@@ -652,7 +653,7 @@ ruby {
     overflow-x: auto;
   }
 
-  
+
   /* JLPT table screen size*/
   .jlpt-table {
     width: 100%;
@@ -714,10 +715,7 @@ ruby {
   
   
   
-
-
-
-
+  
 
   
   
