@@ -713,7 +713,11 @@ ruby {
     }
   }
   
-  
+  /*resolve table issue for mobile*/
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
   
   
 
