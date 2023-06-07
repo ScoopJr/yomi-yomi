@@ -235,8 +235,8 @@ body {
 
   .story-level img {
     width: 100%;
-    height: auto;
-    border-radius: 100px; /*should this be 50%?*/
+    height: auto; 
+    border-radius: 100px; /*should this be 50%?*/ 
   }
 
   .croc img {
