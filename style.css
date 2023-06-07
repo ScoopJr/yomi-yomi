@@ -658,12 +658,14 @@ ruby {
   .jlpt-table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
   }
   
   .jlpt-table th,
   .jlpt-table td {
     padding: 8px;
     border: 1px solid #ccc;
+    word-wrap: break-word;
   }
   
   @media screen and (max-width: 480px) {
@@ -725,3 +727,5 @@ ruby {
   
 
 
+
+  
