@@ -99,6 +99,71 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 
+// TESTING SWIPE STORY
+
+$(document).ready(function() {
+    $(".story-container").click(function() {
+      $(this).dialog({
+        modal: true,
+        width: "90%",
+        height: "auto",
+        show: { effect: "fade", duration: 500 },
+        hide: { effect: "fade", duration: 500 }
+      });
+    });
+  });
+
+
+  let isOpen = false;
+
+function toggleStory() {
+    const storyContent = document.querySelector('.story-content');
+    if (isOpen) {
+        storyContent.classList.add('hidden');
+    } else {
+        storyContent.classList.remove('hidden');
+    }
+    isOpen = !isOpen;
+}
+
+let storyPages;
+let currentIndex = 0;
+
+function setupSwipe() {
+    const storyContent = document.querySelector('.story-content');
+    storyPages = storyContent.querySelectorAll('.story-page');
+
+    const hammertime = new Hammer(storyContent);
+    hammertime.on('swipeleft', () => {
+        showNextPage();
+    });
+    hammertime.on('swiperight', () => {
+        showPreviousPage();
+    });
+}
+
+function showNextPage() {
+    if (currentIndex < storyPages.length - 1) {
+        storyPages[currentIndex].classList.add('hidden');
+        currentIndex++;
+        storyPages[currentIndex].classList.remove('hidden');
+    }
+}
+
+function showPreviousPage() {
+    if (currentIndex > 0) {
+        storyPages[currentIndex].classList.add('hidden');
+        currentIndex--;
+        storyPages[currentIndex].classList.remove('hidden');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    setupSwipe();
+});
+
+
+
 
 
   
